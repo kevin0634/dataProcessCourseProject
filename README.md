@@ -17,6 +17,7 @@ For both training data and test data, we concentrate on three files. namely "X_t
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
 ## Data Cleaning R Script
 The R script ("run_analysis.R") contains six parts in the main body. 
 -Read in data files
