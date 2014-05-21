@@ -20,15 +20,21 @@ For both training data and test data, we concentrate on three files. namely "X_t
 
 ## Data Cleaning R Script
 The R script ("run_analysis.R") contains six parts in the main body. 
--Read in data files
+- Read in data files.
+
 In this part of the code, we first set the working directory to the directory that includes the data. Then read.table functions are executed to read in the training/test data, as well as the features and activity.
--Merge training and test data
+- Merge training and test data.
+
 This part combines the training and test data to form one data set.
--Extract the measurements on the mean and standard deviation for each measurement.
+- Extract the measurements on the mean and standard deviation for each measurement.
+
 This part of the code extracts the measurement on the mean and standard deviation. The details could be found in the CodeBook.md
--Assign appropriate column names
+- Assign appropriate column names
+
 This part of the code assigns appropriate column names for each of the column. The reason is that the original wording of the features are not legal names for R.
--Use descriptive activity names
+- Use descriptive activity names
+
 The data set so far has the activity label (y_train(test)) for each of the record. This sometimes is not clear for future data users if there is not a look up table for activity label and activity. So we here use descriptive activity names in the data set instead of the activity label.
--Create tidy data set with the average of each selected variable from above steps by each activity and each subject.
+- Create tidy data set with the average of each selected variable from above steps by each activity and each subject.
+
 A new data set is created to summarize the data set we obtained above. The average of each selected variable is calculated for each activity and each subject.
